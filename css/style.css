@@ -1,0 +1,105 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/*header {
+   background: rgb(53,58,64);
+   width: 100%;
+}
+
+.imagen-logo {
+   height: 50px;
+   text-align: center;
+} */
+
+h2 {
+   display: inline-block;
+   font-size: 18px;
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 15px 0;
+   padding: 15px;
+}
+
+/*.logo {
+   display: inline-block;
+   color: white;
+}
+
+nav {
+   float: right;
+   padding: 15px;
+}
+*/
+a {
+   color: white;
+   text-decoration: none;
+   padding: 20px;
+}
+
+#enlace_distint {
+   color: green;
+}
+/*
+main {
+   / height: 80vh; /
+   position: relative;
+}
+*/
+.img-principal {
+   background-image: url(../assets/img/hawaii.jpg);
+   background-color: rgb(62, 63, 63);
+   background-blend-mode: soft-light;
+   background-position: center;
+   background-size: cover;
+   height: 100vh;
+}
+
+.card-float {
+   position: absolute;
+   right: 80px;
+   top: 200px;
+   width: 50%;
+   color: white;
+   font-weight: 300;
+   text-align: right;
+}
+
+.enlace-1 {
+   border: 2px solid white;
+   border-radius: 10px;
+}
+
+.enlace-2 {
+   background: green;
+   border-radius: 10px;
+}
+
+p {
+   width: 100%;
+   padding: 15px 0;
+}
+
+.container-enlace {
+   padding: 20px 0;
+ }
+
+.container-oradores {
+   display: flex;
+   width: 100%;
+}
+
+ .card img {
+   width: 200px;
+}
+
+.honolulu{
+   width: 50%;
+   display: flex;
+}
+
+.descripcion{
+   width: 50%;
+   display: flex;
+}

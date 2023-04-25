@@ -11,6 +11,7 @@
 </head>
 
 <body>
+   <!-- navbar -->
       <nav class="navbar navbar-expand-lg bg-secondary navbar-dark fixed-top">
          <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -42,47 +43,87 @@
             </div>   
          </div>
       </div>
-
-<section class="container-oradores" id="orador"> 
-   <p>Conoce a los</p>
+<!-- oradores -->
+<div class="container text-center mt-4" id="oradores"> 
+   <h4>Conoce a los</h4>
    <h2>ORADORES</h2>
-<div class="card">
-   <img src="./assets/img/steve.jpg" alt="Imagen de Steve Jobs">
-   <a href="">Javascript</a>
-   <a href="">React</a>
-   <h3>Steve Jobs</h3>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nisi, modi dolor eligendi omnis labore illum rerum recusandae, fugiat consequatur alias quas neque possimus suscipit enim non repudiandae dolore laudantium.</p>
-</div>
-<div class="card">
-   <img src="./assets/img/bill.jpg" alt="Imagen de Bill Gates">
-   <a href="">Javascript</a>
-   <a href="">React</a>
-   <h3>Bill Gates</h3>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nisi, modi dolor eligendi omnis labore illum rerum recusandae, fugiat consequatur alias quas neque possimus suscipit enim non repudiandae dolore laudantium.</p>
-</div>
-<div class="card">
-   <img src="./assets/img/ada.jpeg" alt="Imagen de Ada Lovelace">
-   <a href="">Negocios</a>
-   <a href="">Startups</a>
-   <h3>Ada Lovelace</h3>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nisi, modi dolor eligendi omnis labore illum rerum recusandae, fugiat consequatur alias quas neque possimus suscipit enim non repudiandae dolore laudantium.</p>
-</div>
-</section>
+   <div class="row row-cols-1 row-cols-md-3 g-4 text-start mt-2">
+      <div class="col">
+        <div class="card">
+          <img src="./assets/img/steve.jpg" class="card-img-top" alt="Imagen de Steve Jobs" loading="lazy">
+          <div class="card-body">
+            <h5 class="card-title">Steve Jobs</h5>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat expedita maiores perspiciatis delectus itaque perferendis cupiditate nisi maxime, accusantium commodi nesciunt corporis suscipit natus impedit quod harum, minima asperiores quae.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./assets/img/bill.jpg" class="card-img-top" alt="Imagen de Bill Gates" loading="lazy">
+          <div class="card-body">
+            <h5 class="card-title">Bill Gates</h5>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere similique dolorum exercitationem accusantium veniam nulla harum assumenda error eos sunt aliquid laboriosam culpa ut est, soluta aut eveniet incidunt fugiat!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./assets/img/ada.jpeg" class="card-img-top" alt="Imagen de Ada Lovelace" loading="lazy">
+          <div class="card-body">
+            <h5 class="card-title">Ada Lovelace</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quae accusamus. Saepe cumque recusandae a error, numquam laboriosam natus beatae accusamus voluptate maiores quisquam corrupti ab voluptatibus aspernatur quidem nulla?</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<section>
-   <img class="honolulu" src="./assets/img/honolulu.jpg" alt="Imagen de Honolulu">
-   <div class="descripcion">
-      <h1>Bs As - Octubre</h1>
-         <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina. En los Estados Unidos, Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad condado consolidada que cubre toda la ciudad (aproximadamente 600km2 de supuerficie).</p>
-            <a class="enlace-1" href="">Conocé más</a>
+<div class="container-fluid mt-5" id="lugar">
+   <div class="row">
+      <div class="col-6 col p-0">
+         <img src="./assets/img/honolulu.jpg" alt="Imagen de Honolulu" class="img-fluid">
+      </div>
+      <div class="col-6 bg-dark">
+            <div class="card-body text-white text-start pt-5">
+              <h5 class="card-title">Bs As - Octubre</h5>
+              <p class="card-text">Buenos Aires es la provincia y localidad más grande del estado de Argentina. En los Estados Unidos, Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad condado consolidada que cubre toda la ciudad (aproximadamente 600km2 de superficie).</p>
+              <a href="#" class="btn btn-outline-light">Conocé más</a>
+            </div>
+      </div>
    </div>
-</section>
-<section class="formulario">
-   <form action=""></form>
-</section>
+</div>
 
-<footer>
-   <nav></nav>
+<div class="container mt-5">
+   <h6>CONVIÉRTETE EN UN</h6>
+   <h1>ORADOR</h1>
+   <p>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
+   <div class="row">
+       <div class="input-group mb-3 mt-4" id="orador">
+         <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+         <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+       </div>      
+       <div class="input-group">
+         <textarea class="form-control" placeholder="Sobre qué quieres hablar?" aria-label="Sobre qué quieres hablar?"></textarea>
+       </div>
+       <div class="d-grid gap-2 mt-4">
+         <button class="btn btn-success" type="button">Enviar</button>
+       </div>
+   </div>
+</div>
+
+<footer class="footer">
+   <nav class="navbar navbar-expand-lg bg-secondary navbar-dark mt-5">
+      <div class="collapse navbar-collapse justify-content-evenly" id="navbarNavAltMarkup">
+         <div class="navbar-nav">
+           <a class="nav-link" href="#">Preguntas frecuentes</a>
+           <a class="nav-link" href="#">Contáctanos</a>
+           <a class="nav-link" href="#">Prensa</a>
+           <a class="nav-link" href="#">Conferencias</a>
+           <a class="nav-link" href="#">Términos y condiciones</a>
+           <a class="nav-link" href="#">Privacidad</a>
+           <a class="nav-link" href="#">Estudiantes</a>
+         </div>
+       </div>
+     </div>
 </footer>
 
 <script src="./js/bootstrap.bundle.min.js"></script>

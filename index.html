@@ -11,7 +11,6 @@
 </head>
 
 <body>
-   <!-- navbar -->
       <nav class="navbar navbar-expand-lg bg-secondary navbar-dark fixed-top">
          <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -34,17 +33,19 @@
        </nav>
        
       <div class="container-fluid">
-         <div class="row flex-row-reverse img-principal align-items-center">
+         <div class="row flex-row-reverse img-principal align-items-center px-5">
             <div class="col-6 text-white">
-               <h1>Conf Bs As</h1>
-               <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-               <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
-               <button type="button" class="btn btn-success">Comprar tickets</button>
+               <h1 class="text-end">Conf Bs As</h1>
+               <p class="text-end">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+               <div class="text-end">
+                  <button type="button" class="btn btn-outline-light mt-2">Quiero ser orador</button>
+                  <button type="button" class="btn btn-success mt-2">Comprar tickets</button>
+               </div>
             </div>   
          </div>
       </div>
-<!-- oradores -->
-<div class="container text-center mt-4" id="oradores"> 
+
+<div class="container text-center mt-4 mx=0" id="oradores"> 
    <h4>Conoce a los</h4>
    <h2>ORADORES</h2>
    <div class="row row-cols-1 row-cols-md-3 g-4 text-start mt-2">
@@ -52,7 +53,9 @@
         <div class="card">
           <img src="./assets/img/steve.jpg" class="card-img-top" alt="Imagen de Steve Jobs" loading="lazy">
           <div class="card-body">
-            <h5 class="card-title">Steve Jobs</h5>
+            <button type="button" class="btn btn-warning btn-sm">Javascript</button>
+            <button type="button" class="btn btn-info btn-sm">React</button>
+            <h5 class="card-title pt-2">Steve Jobs</h5>
             <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat expedita maiores perspiciatis delectus itaque perferendis cupiditate nisi maxime, accusantium commodi nesciunt corporis suscipit natus impedit quod harum, minima asperiores quae.</p>
           </div>
         </div>
@@ -61,7 +64,9 @@
         <div class="card">
           <img src="./assets/img/bill.jpg" class="card-img-top" alt="Imagen de Bill Gates" loading="lazy">
           <div class="card-body">
-            <h5 class="card-title">Bill Gates</h5>
+            <button type="button" class="btn btn-warning btn-sm">Javascript</button>
+            <button type="button" class="btn btn-info btn-sm">React</button>
+            <h5 class="card-title pt-2">Bill Gates</h5>
             <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere similique dolorum exercitationem accusantium veniam nulla harum assumenda error eos sunt aliquid laboriosam culpa ut est, soluta aut eveniet incidunt fugiat!</p>
           </div>
         </div>
@@ -70,19 +75,20 @@
         <div class="card">
           <img src="./assets/img/ada.jpeg" class="card-img-top" alt="Imagen de Ada Lovelace" loading="lazy">
           <div class="card-body">
-            <h5 class="card-title">Ada Lovelace</h5>
+            <button type="button" class="btn btn-secondary btn-sm">Negocios</button>
+            <button type="button" class="btn btn-danger btn-sm">Startups</button>
+            <h5 class="card-title pt-2">Ada Lovelace</h5>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quae accusamus. Saepe cumque recusandae a error, numquam laboriosam natus beatae accusamus voluptate maiores quisquam corrupti ab voluptatibus aspernatur quidem nulla?</p>
           </div>
         </div>
       </div>
     </div>
-
 <div class="container-fluid mt-5" id="lugar">
    <div class="row">
-      <div class="col-6 col p-0">
-         <img src="./assets/img/honolulu.jpg" alt="Imagen de Honolulu" class="img-fluid">
+      <div class="col-12 col-md-6 p-0">
+            <img src="./assets/img/honolulu.jpg" alt="Imagen de Honolulu" class="img-fluid">
       </div>
-      <div class="col-6 bg-dark">
+      <div class="col-12 col-md-6 bg-dark">
             <div class="card-body text-white text-start pt-5">
               <h5 class="card-title">Bs As - Octubre</h5>
               <p class="card-text">Buenos Aires es la provincia y localidad más grande del estado de Argentina. En los Estados Unidos, Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad condado consolidada que cubre toda la ciudad (aproximadamente 600km2 de superficie).</p>
@@ -103,27 +109,31 @@
        </div>      
        <div class="input-group">
          <textarea class="form-control" placeholder="Sobre qué quieres hablar?" aria-label="Sobre qué quieres hablar?"></textarea>
+         <p class="aclaracion text-start">Recuerda incluir un título para tu charla</p>
        </div>
-       <div class="d-grid gap-2 mt-4">
+       <div class="d-grid gap-2 mt-1">
          <button class="btn btn-success" type="button">Enviar</button>
        </div>
    </div>
 </div>
+</div>
 
-<footer class="footer">
-   <nav class="navbar navbar-expand-lg bg-secondary navbar-dark mt-5">
-      <div class="collapse navbar-collapse justify-content-evenly" id="navbarNavAltMarkup">
-         <div class="navbar-nav">
-           <a class="nav-link" href="#">Preguntas frecuentes</a>
-           <a class="nav-link" href="#">Contáctanos</a>
-           <a class="nav-link" href="#">Prensa</a>
-           <a class="nav-link" href="#">Conferencias</a>
-           <a class="nav-link" href="#">Términos y condiciones</a>
-           <a class="nav-link" href="#">Privacidad</a>
-           <a class="nav-link" href="#">Estudiantes</a>
-         </div>
-       </div>
-     </div>
+<footer>
+   <nav class="navbar navbar-expand-xl bg-dark navbar-dark mt-5">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse justify-content-evenly" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link px-5" href="#">Preguntas frecuentes</a>
+            <a class="nav-item nav-link px-5" href="#">Contáctanos</a>
+            <a class="nav-item nav-link px-5" href="#">Prensa</a>
+            <a class="nav-item nav-link px-5" href="#">Conferencias</a>
+            <a class="nav-item nav-link px-5" href="#">Términos y condiciones</a>
+            <a class="nav-item nav-link px-5" href="#">Privacidad</a>
+            <a class="nav-item nav-link px-5" href="#">Estudiantes</a>
+          </div>
+        </div>
+      </div>
+    </nav>
 </footer>
 
 <script src="./js/bootstrap.bundle.min.js"></script>

@@ -18,9 +18,10 @@ a {
    background-image: url(../assets/img/hawaii.jpg);
    background-color: rgb(62, 63, 63);
    background-blend-mode: soft-light;
-   background-position: center;
-   background-size: cover;
-   height: 100vh;
+   background-position:top ;
+   background-size:auto;
+   width: auto;
+   height: auto;
 }
 
 p {

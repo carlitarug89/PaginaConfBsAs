@@ -20,8 +20,7 @@ a {
    background-blend-mode: soft-light;
    background-position:top ;
    background-size:auto;
-   width: auto;
-   height: auto;
+   height: 100vh;
 }
 
 p {
